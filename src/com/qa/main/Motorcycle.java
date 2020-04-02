@@ -1,6 +1,6 @@
 package com.qa.main;
 
-public class Motorcycle extends Vehicle {
+public class Motorcycle extends Vehicle implements Offroadable {
 
 	private long coolnessFactor = 9001;
 
@@ -41,6 +41,12 @@ public class Motorcycle extends Vehicle {
 		float motorBill = (float) 600.50;
 		System.out.println("Your bill: " + motorBill);
 		return motorBill;
+	}
+
+	@Override
+	public void dirtydriving() {
+		// TODO Auto-generated method stub
+
 	}
 
 }
